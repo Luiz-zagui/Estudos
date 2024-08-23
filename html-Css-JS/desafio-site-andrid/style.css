@@ -1,0 +1,162 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'fonte';
+    src: url(fontes/idroid.otf);
+}
+
+body{
+    background-color: rgba(101, 235, 152, 0.677);
+}
+
+/* Cabeçalho */
+
+
+
+#cabecalho {  
+    background: linear-gradient(to top, #02af0b, #008407, #003e03);
+    margin: -22px;
+    padding: 19px;
+    border: 0;
+    color: white;
+}
+
+#titulo1, p{
+
+    text-align: center;
+
+}
+
+#b1, #b2, #b3, #b4{
+
+    margin-top: 20px;
+    margin-left: 50px;
+    text-align: left;
+    display: inline-block;  
+  
+}
+
+#botao :hover{
+    background-color: #003e03;
+    color: white;
+}
+
+
+
+
+/* principal */
+
+
+
+
+main{
+   background-color: rgb(255, 255, 255);
+   width: 80%;
+   text-align: center;
+    margin: auto;
+    border-radius: 30px;
+}
+
+
+/* Imagens */
+
+.conteiner{
+    width: 100%;
+    height: auto;
+}
+
+.conteiner img{
+    max-width: 100%;
+    height: auto;
+}
+
+.teste1 {
+    width: 100%; /* Largura desejada para a div */
+    height: 200px; /* Altura desejada para a div */
+    position: relative; /* Importante para posicionamento absoluto da imagem */
+    overflow: hidden; /* Para garantir que a imagem não saia dos limites da div */
+}
+
+.teste1 img {
+    width: 100%; /* Ocupa 100% da largura da div pai */
+    height: 100%; /* Ocupa 100% da altura da div pai */
+    object-fit: cover; /* Preenche a div completamente mantendo a proporção */
+    position: absolute; /* Posicionamento absoluto para ocupar completamente a div */
+    top: 0; /* Alinha a imagem no topo da div */
+    left: 0; /* Alinha a imagem à esquerda da div */
+    
+}
+/* fontes */
+
+h1{
+    font-family: 'fonte';
+    color: #008407;
+    }
+
+#subtitulo{
+    background-color: #35ff0269;
+    font-family: 'fonte';
+    color: #008407;
+}
+
+#cabecalhotitulo{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #ffffff;
+}
+h3{
+    color: white;
+    background-color: #00c70a;
+    text-align: left;
+    border-radius: 25px, 25px, 0px, 0px;
+    border-radius: 10px 10px 0 0;
+    margin: 1px;
+    height: 35px;
+    width: auto;
+    text-align: left;
+       
+}
+
+p{
+    text-align: left;
+}
+/* Vídeo */
+
+#video{
+    background-color: #016d07;
+    width: 100%;
+    height: 317px;
+    position: relative;
+    overflow: hidden;
+   
+}
+/* Caixa */
+
+#caixa{
+    margin-top: 10px;
+    border-radius: 18px;
+    display: inline-block;
+    background-color: rgba(101, 235, 152, 0.677);
+    width: 70%
+}
+
+#coluna1, #coluna2{
+    display: inline-block;
+    text-align: left;
+    text-decoration: underline;
+    
+}
+
+#coluna1{
+    margin-left: -35%;
+    margin-right: 25%;
+}
+#coluna2{
+    margin-right: -30%;
+}
+
+/*rodapé */
+
+footer{
+    background-color: #003e03;
+    color: white;
+    border-radius: 0px, 0px, 30px, 30px;
+}
