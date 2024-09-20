@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Calcular do Multa</h1>
+
+    velocidade do carro: <input type="number" name="txtvel" id="txtvel"> Km/h
+    <input type="button" value="Verificar" onclick="calcular()">
+    <div id="res" style="background-color: aqua;">
+
+    </div>
+
+    <script>
+       
+       function calcular() {
+            var txtv = document.getElementById("txtvel"); // Corrigido para pegar o elemento corretamente
+            var velocidade = Number(txtv.value); // Corrigido para garantir que seja um número
+            var res = document.getElementById("res"); // Corrigido, sem o #, para pegar o elemento div correto
+            res.innerHTML = `Sua velocidade atual é de ${velocidade} km/h`; // Usando interpolação de strings correta
+            if (velocidade > 60)
+                res.innerHTML = `Voce passou da velocidade` 
+        }
+    </script>
+</body>
+
+</html>

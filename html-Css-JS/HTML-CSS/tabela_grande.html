@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela Grande</title>
+</head>
+<body>
+    <!--
+    anatomia de tabelas grandes:
+    TABLE
+        THEAD
+            TR, TD, TH
+        TBORY
+            TR, TD, TH
+        TFOOT
+            TR, TD, TH
+    -->
+
+    <style>
+
+        table{
+            width: 500px;
+            height: 200px;
+            text-align: center;
+            border-collapse: collapse;
+        }
+
+        td{
+            border: 1px solid black;
+        }
+
+        thead{
+            background-color: beige;
+        }
+
+        tfoot{
+            background-color: aquamarine;
+            position: relative;
+            left: 50px;
+        }
+
+        tbody > tr:nth-child(2n){
+
+            background-color: rgb(122, 116, 116);
+
+        }
+
+    </style>
+    <caption>Teste de titulos</caption>p
+    <table>
+        <thead>
+            <tr>
+                <th scope="col">pais</th>
+                <th scope="col"style='width: 200px'>numero</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>EUA</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>brasil</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>canada</td>
+                <td>1</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>testando</td>
+            </tr>
+        </tfoot>
+        
+    </table>
+</body>
+
+</html>

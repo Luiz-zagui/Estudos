@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="movableDiv" style="width: 100px; height: 100px; background-color: red; position: absolute;"></div>
+    
+    <script>
+
+
+        // Função para obter uma posição aleatória dentro da tela
+        function moveDiv() {
+            const div = document.getElementById("movableDiv
+
+        // Função para obter uma posição aleatória dentro da tela
+        function moveDiv() {
+            const div = document.getElementById("movableDiv");
+
+            // Obtenha a largura e altura da janela
+            const windowWidth = window.innerWidth;
+            const windowHeight = window.innerHeight;
+
+            // Calcular posições aleatórias dentro da tela, subtraindo o tamanho da div
+            const randomX = Math.floor(Math.random() * (windowWidth - div.offsetWidth));
+            const randomY = Math.floor(Math.random() * (windowHeight - div.offsetHeight));
+
+            // Aplicar as novas coordenadas à div
+            div.style.left = randomX + "px";
+            div.style.top = randomY + "px";
+        }
+
+        // Adicionar um evento de clique na div para chamá-la
+        document.getElementById("movable
+
+        // Função para obter uma posição aleatória dentro da tela
+        function moveDiv() {
+            const div = document.getElementById("movableDiv");
+
+            // Obtenha a largura e altura da janela
+            const windowWidth = window.innerWidth;
+            const windowHeight = window.innerHeight;
+
+            // Calcular posições aleatórias dentro da tela, subtraindo o tamanho da div
+            const randomX = Math.floor(Math.random() * (windowWidth - div.offsetWidth));
+            const randomY = Math.floor(Math.random() * (windowHeight - div.offsetHeight));
+
+            // Aplicar as novas coordenadas à div
+            div.style.left = randomX + "px";
+            div.style.top = randomY + "px";
+        }
+
+        // Adicionar um evento de clique na div para chamá-la
+        document.getElementById("movableDiv").addEventListener("c
+
+        // Função para obter uma posição aleatória dentro da tela
+        function moveDiv() {
+            const div = document.getElementById("movableDiv");
+
+            // Obtenha a largura e altura da janela
+            const windowWidth = window.innerWidth;
+            const windowHeight = window.innerHeight;
+
+            // Calcular posições aleatórias dentro da tela, subtraindo o tamanho da div
+            const randomX = Math.floor(Math.random() * (windowWidth - div.offsetWidth));
+            const randomY = Math.floor(Math.random() * (windowHeight - div.offsetHeight));
+
+            // Aplicar as novas coordenadas à div
+            div.style.left = randomX + "px";
+            div.style.top = randomY + "px";
+        }
+
+        // Adicionar um evento de clique na div para chamá-la
+        document.getElementById("movableDiv").addEventListener("click", moveDiv);
+    </script>
+
+    
+
+</body>
+</html>

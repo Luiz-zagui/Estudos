@@ -1,0 +1,120 @@
+@charset "UTF-8";
+
+html, body {
+    overflow: hidden;
+    
+    margin: 0;
+    padding: 0;
+      
+}
+
+#container {
+    width: 100vw;
+    height: 100vw;
+}
+
+#zona {
+    border: solid black 1px;
+    width: 80vw;
+    height: 40vw;
+
+}
+
+#nave {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 166, 255, 0.166);
+    box-shadow: 1px 1px 10px 5px rgb(64, 0, 255);
+    top: 580px;
+    position: absolute; 
+    left: 200px;
+}
+
+#tironave{
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 166, 255, 0.166);
+    box-shadow: 1px 1px 10px 5px rgb(64, 0, 255);
+    top: 580px;
+    position: absolute; 
+    left: 400px;
+}
+
+.animacaotiroamigo {
+    animation: tiroamigo 1s linear forwards;
+  }
+
+@keyframes tiroamigo{
+    0%{top: 100vw;}
+    100%{top: -10vw;}
+}
+
+#inimigo{
+    width: 20px;
+    height: 30px;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    top: 30px;
+    animation: inimigo 20s infinite linear;
+}
+
+
+@keyframes inimigo{
+    0%{right: 100vw;}
+    50%{right: 20vw;}
+    100%{right: 100vw;}
+}
+
+
+#tirofixo{
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255, 0, 0, 0.793);
+    box-shadow: 1px 1px 10px 5px rgb(255, 0, 0);
+    position: absolute;
+    top: 30px;
+    animation: inimigo 20s infinite linear;
+    transform: translateY(30px) translateX(-5px);
+    
+}
+
+
+#tiro {
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255, 0, 0, 0.793);
+    box-shadow: 1px 1px 10px 5px rgb(255, 0, 0);
+    position: absolute;
+    top: 30px;
+    transform: translateY(30px) translateX(-5px);
+    
+  }
+  
+  .animacaoInimigo {
+    animation: inimigo 9s infinite linear;
+  }
+  
+  .animacaoTiroacao {
+    animation: tiroacao  8s infinite  ;
+  }
+
+
+@keyframes inimigo{
+    0%{right: 100vw;}
+    50%{right: 20vw;}
+    100%{right: 100vw;}
+}
+
+@keyframes tiroacao{
+    0%{top: 0px;}
+    100%{top: 2000px;}
+}
+
+
+
+#limite{
+    width: 1225px;
+    height: 20px;
+    background-color: greenyellow;
+    box-shadow: 1px 1px 10px 5px greenyellow;
+}

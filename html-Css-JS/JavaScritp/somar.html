@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+<body>
+    <h1>Digite os valores</h1>
+    <input type="number" id="x"> +
+    <input type="number" id="y">
+    <input type="button" value="somar" onclick="somar()">
+    <p id="ress">Resultado</p>
+
+    <script>
+        function somar(){
+        var numx = window.document.getElementById('x')
+        var numy = window.document.getElementById('y')
+        var res = window.document.getElementById('ress')
+        var a = Number(numx.value)
+        var b = Number(numy.value)
+        var resposta = a + b
+        res.innerHTML = resposta
+                            }
+
+    </script>
+
+
+
+</body>
+</html>
